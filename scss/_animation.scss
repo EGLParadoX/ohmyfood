@@ -1,0 +1,311 @@
+.loader
+{
+  text-align: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  height: 100%;
+  padding-top: 22em;
+  z-index: 2;
+  animation: backgroundAppear 5s ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  position: absolute;
+
+
+  span
+  {
+    font-size: 30px;
+    font-family: $font-family_3;
+    display: inline-block;
+    opacity: 0;
+    
+    animation:loadingPage 0.3s alternate;
+    animation-iteration-count: 10;
+  }
+  
+  span:nth-child(1)
+  {
+    color:$green-color ;
+    animation-delay: 0.1s;
+  }
+  span:nth-child(2)
+  {
+    color:$dark-color ;
+    animation-delay: 0.2s;
+  }
+  span:nth-child(3)
+  {
+    color:#ff79da;
+    animation-delay: 0.3s;
+  }
+  span:nth-child(4)
+  {
+    color:$dark-color ;
+    animation-delay: 0.4s;
+  }
+  span:nth-child(5)
+  {
+    color:$green-color ;
+    animation-delay: 0.5s;
+  }
+  span:nth-child(6)
+  {
+    color:#ff79da ;
+    animation-delay: 0.6s;
+  }
+  span:nth-child(7)
+  {
+    color:$dark-color ;
+    animation-delay: 0.7s;
+  }
+  span:nth-child(8)
+  {
+    color:$green-color ;
+    animation-delay: 0.8s;
+  }
+
+  
+}
+
+
+@keyframes backgroundAppear {
+  0% {
+    opacity: 1;
+    position: fixed;
+  }
+  50% {
+    opacity: 1;
+    position: fixed;
+  }
+  60%
+  {
+    opacity: 0;
+    position: fixed;
+  }
+  75% {
+    opacity: 0;
+    position: absolute;
+  }
+
+  100% {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+@keyframes loadingPage {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+}
+
+
+@keyframes fadeIn {
+  0%{
+  opacity: 0;
+  transform: translateY(15px);
+  }
+  100%
+  {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+}
+
+.card__menu
+{
+  animation: fadeIn 1.5s alternate;
+  animation-fill-mode: both;
+}
+
+.threeMenu
+{
+  a
+  {
+    opacity: 0;
+    transition: all 200ms;
+    animation: fadeIn 1s alternate;
+    animation-fill-mode: both;
+  }
+}
+
+
+
+.threeMenu
+{
+  a:nth-child(1)
+  {
+    animation-delay: 200ms;
+  } 
+
+  a:nth-child(2)
+  {
+    animation-delay: 400ms;
+  } 
+
+  a:nth-child(3)
+  {
+    animation-delay: 600ms;
+  } 
+
+  a:nth-child(4)
+  {
+    animation-delay: 800ms;
+  } 
+
+}
+
+
+
+/*BUTTON ANIMATION*/
+
+.button1
+{
+  transition: all 0.2s;
+  &:hover
+  {
+    transform: scale(1.1);
+  }
+}
+
+.button2
+{
+  transition: all 0.2s;
+  &:hover
+  {
+    transform: scale(1.1);
+  }
+}
+
+
+
+.fonctionnementList
+{
+  a 
+  {
+    transition: all 0.2s;
+    &:hover
+    {
+      background-color: rgba(147, 86, 220, 0.15);
+    }
+    &:hover i
+    {
+      color : $purple-color;
+    }
+  }
+}
+
+
+/*ARTICLE ANIMATION*/
+
+
+.sectionContent2
+{
+  .card
+  {
+    border: 2px solid transparent;
+    transition: all 0.2s;
+    h4{
+    transition: all 0.2s;
+    }
+
+    &:hover h4
+    {
+      color: $purple-color;
+    }
+    &:hover
+    {
+      border: 2px solid $purple-color;
+    }
+  }
+}
+
+
+/*FOOTER ANIMATION*/
+
+footer
+{
+  a 
+  {
+    transition: all 0.2s;
+
+    &:hover
+    {
+      color: #ff79da;
+    }
+  }
+}
+
+/*ANIMATION BACKICON*/
+
+.iconBack
+{
+  a{
+  transition: all 0.2s;
+  
+  &:hover
+  {
+    font-size: 25px;
+  }
+}
+}
+
+
+/*ANIMATION CHECK*/
+
+.card__menu
+{
+
+  .check
+  {
+    transition:all 0.8s;
+
+    i
+    {
+      transition: all 0.8s;
+    }
+  }
+  &:hover .check
+  {
+    width: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    i
+    {
+      transform: rotate(0deg);
+
+    }
+}
+}
+
+
+/*HEART ANIMATION*/
+
+
+.fa-solid 
+{
+
+  transition: all 0.2s;
+  &:hover
+  {
+    opacity: 1 !important;
+  }
+}
+
+
+
+
+
+
+
+

@@ -5,7 +5,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
   height: 100%;
-  padding-top: 22em;
+  padding-top: 50vh;
   z-index: 2;
   animation: backgroundAppear 5s ease-in;
   animation-iteration-count: 1;
@@ -161,6 +161,11 @@
   {
     animation-delay: 800ms;
   } 
+  a:nth-child(5)
+  {
+    animation-delay: 1000ms;
+  } 
+
 
 }
 
@@ -170,6 +175,9 @@
 
 .button1
 {
+
+  a{
+
   transition: all 0.2s;
   &:hover
   {
@@ -177,13 +185,20 @@
   }
 }
 
+}
+
 .button2
 {
-  transition: all 0.2s;
-  &:hover
+  a 
+  {
+    transition: all 0.2s;
+  &:hover 
   {
     transform: scale(1.1);
   }
+
+  }
+  
 }
 
 

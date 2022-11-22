@@ -39,7 +39,8 @@ ul {
   text-decoration: none;
   color: $text-color-black;
   padding-inline-start: 0;
-}
+} 
+
 
 
 .heartIcon
@@ -67,6 +68,8 @@ ul {
 
 
 /*================================================Header Part===========================================================*/
+
+
 header {
   
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
@@ -158,7 +161,10 @@ main {
     }
 
     .fonctionnementList {
+
       ul {
+        display: flex;
+        flex-direction: column;
         counter-reset: compteListe;
       }
       li {
@@ -177,6 +183,7 @@ main {
           content: counter(compteListe) " ";
         }
       }
+      
       a {
         width: 100%;
         margin-top: 25px;
@@ -211,15 +218,16 @@ main {
       padding-bottom: 40px;
     }
     .restaurantList {
-      margin-top: 20px;
       display: flex;
       flex-direction: column;
+
       .card {
         position: relative;
         background-color: $white-color;
         border-radius: 20px;
         padding-bottom: 10px;
         margin-bottom: 20px;
+        width: 100%;
         @include mainElement-shadow;
       }
     }

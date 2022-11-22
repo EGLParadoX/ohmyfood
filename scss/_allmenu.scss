@@ -92,6 +92,12 @@ section
     }
   }
 
+  .card_reunite
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
   .card__menu
   {
     background-color: $white-color;
@@ -134,7 +140,41 @@ section
     }
 
 
-  .container2 
+  
+
+
+.all
+{
+
+  position: absolute;
+  width: 100%;
+  top: 270px;
+
+  .button2
+  {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 45px;
+  }
+
+  .buttonCommand
+  {
+    background: linear-gradient(175deg, #ff79da, #9356dc);
+      color: $text-color-white;
+      font-weight: 400;
+      padding: 15px 50px;
+      border-radius: 30px;
+      box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.menu 
+{
+  padding-bottom: 30px;
+
+  .card_reunite
+  {
+    .container2 
   {
     padding: 20px;
     width: 100%;
@@ -172,36 +212,9 @@ section
 
     
   }
-
-
-.all
-{
-
-  position: absolute;
-  width: 100%;
-  top: 270px;
-
-  .button2
-  {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 45px;
   }
 
-  .buttonCommand
-  {
-    background: linear-gradient(175deg, #ff79da, #9356dc);
-      color: $text-color-white;
-      font-weight: 400;
-      padding: 15px 50px;
-      border-radius: 30px;
-      box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
-  }
-}
-
-.menu 
-{
-  padding-bottom: 30px;
+  
 }
 
 

@@ -18,6 +18,23 @@
         }
     }
 
+
+
+    section {
+      .fonctionnementList {
+        .ensembleFonctionnement {
+          flex-direction: row;
+          flex-wrap: nowrap;
+          width: 100%;
+        }
+  
+        li {
+          margin-right: 40px;
+          width: 500px;
+        }
+      }
+    }
+
     section {
         .header__section {
           .titleMenu1 {

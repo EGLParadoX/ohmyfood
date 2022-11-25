@@ -25,12 +25,12 @@
         .ensembleFonctionnement {
           flex-direction: row;
           flex-wrap: nowrap;
-          width: 100%;
+          justify-content: space-between;
         }
   
         li {
           margin-right: 40px;
-          width: 500px;
+          width: 30%;
         }
       }
     }
